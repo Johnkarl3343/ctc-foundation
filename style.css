@@ -631,21 +631,7 @@ header nav ul {
   color: #6b7280;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-  .president-card {
-    grid-template-columns: 1fr;
-    padding: 3rem;
-  }
 
-  .president-image img {
-    max-height: 400px;
-  }
-
-  .section-header h2 {
-    font-size: 2.8rem;
-  }
-}
 
 /* GALLERY SECTION */
 
@@ -927,87 +913,3 @@ header nav ul {
   color: var(--zinc-500);
 }
 
-/* --- Media Queries for Footer (Mobile) --- */
-@media (max-width: 768px) {
-  .footer-wrapper {
-    grid-template-columns: 1fr; /* Single column */
-    padding: 2rem 1.5rem;
-    text-align: left; /* Default to left for blocks */
-    gap: 3rem; /* Increase gap between sections */
-  }
-
-  .footer-logo-content {
-    order: 1; /* Keep logo and description at the top */
-    margin-top: 0;
-  }
-
-  .footer-logo-content .logo {
-    justify-content: flex-start; /* Align logo to the left */
-  }
-
-  .footer-logo-content p {
-    font-size: 1.2rem;
-  }
-
-  .footer-links {
-    order: 2; /* Quick Links after logo */
-    margin-bottom: 0;
-  }
-
-  .footer-contact {
-    order: 3; /* Get In Touch after Quick Links */
-    margin-bottom: 0;
-  }
-
-  .footer-links h3,
-  .footer-contact h3 {
-    width: fit-content; /* Allow title to be natural width */
-    text-align: left; /* Align titles to left */
-    border-bottom: 2px solid var(--color-brand-600); /* Keep brand border */
-    margin-left: 0; /* Remove auto margin for centering */
-  }
-
-  .footer-links ul {
-    align-items: flex-start; /* Align links to the left */
-    gap: 0.5rem;
-  }
-
-  .footer-contact p {
-    justify-content: flex-start; /* Align contact info to the left */
-  }
-
-  /* Social links on the bottom copyright row */
-  .social-links {
-    display: none; /* Hide social links from footer-logo-content on mobile */
-  }
-
-  .footer-copyright {
-    text-align: center; /* Center copyright text */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; /* Space between copyright text and social icons */
-    padding-top: 2rem;
-  }
-
-  .footer-copyright p {
-    padding-top: 0;
-    color: var(--zinc-500); /* Maintain original grey color */
-  }
-
-  /* NEW: Social icons for the copyright row */
-  .footer-copyright .social-icons-bottom {
-    display: flex; /* Show new social icons container */
-    gap: 1.5rem;
-  }
-
-  .footer-copyright .social-icons-bottom a {
-    font-size: 2.2rem;
-    color: var(--zinc-400); /* Darker grey for icons */
-    transition: color 0.3s ease;
-  }
-
-  .footer-copyright .social-icons-bottom a:hover {
-    color: var(--color-brand-500);
-  }
-}
