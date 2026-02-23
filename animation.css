@@ -1,0 +1,104 @@
+.fade-in,
+.number-pop,
+.number-pop-color,
+.slide-in,
+.fade-in-late {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 2. Keyframes (Looping Versions) */
+
+/* Fade In + Fade Out */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Pop + Bounce + Fade Out */
+@keyframes popAndBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  15% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* Slide In + Fade Out */
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) skew(-15deg);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0) skew(-15deg);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(0) skew(-15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50px) skew(-15deg);
+  }
+}
+
+/* 3. Animation Assignments */
+/* Total loop time = 5 seconds */
+
+.fade-in {
+  animation: fadeInUp 5s ease-out infinite;
+  animation-delay: 0.2s;
+}
+
+.number-pop {
+  animation: popAndBounce 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  animation-delay: 0.5s;
+}
+
+.number-pop-color {
+  color: #f39c12;
+  font-size: 5.5rem;
+  animation: popAndBounce 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  animation-delay: 0.7s;
+}
+
+.slide-in {
+  animation: slideFromLeft 5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+  animation-delay: 1s;
+}
+
+.fade-in-late {
+  animation: fadeInUp 5s ease-out infinite;
+  animation-delay: 1.3s;
+}

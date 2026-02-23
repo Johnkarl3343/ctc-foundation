@@ -1,0 +1,24 @@
+<div class="hero-info">
+        <h2 class="title">
+          <span class="fade-in">Celebrating</span>
+          <strong class="number-pop">4</strong
+          ><span class="number-pop-color">2</span>
+          <span class="fade-in">Years of Excellence</span>
+        </h2>
+
+        <div class="sub-title-box">
+          <div class="parallelogram slide-in">
+            <span>Ceguera Technological Colleges</span>
+          </div>
+          <span class="since-text fade-in-late">Since 1984-2026</span>
+        </div>
+        <p class="description">
+          Welcome to the official website of the 42nd Foundation Anniversary of
+          Ceguera Technological Colleges. For over four decades, our institution
+          has been committed to academic excellence, character formation, and
+          technological innovation. This celebration is a tribute to our
+          founders, educators, alumni, students, and the entire community who
+          made this journey possible.
+        </p>
+        <button>Celebrate with us</button>
+      </div>
